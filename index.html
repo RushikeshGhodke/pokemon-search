@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pokémon Search App</h1>
+    </header>
+    <main>
+        <div class="card">
+            <p id="search-text">Search for Pokémon Name or ID:</p>
+            <div class="search">
+                <input type="text" name="poke-name" id="poke-name" placeholder="Pikachu">
+                <button id="poke-search-btn">Search</button>
+            </div>
+
+            <div class="info">
+                <div class="name-id">
+                    <span id="pokemon-name"></span>
+                    <span id="pokemon-id"></span>
+                </div>
+                <div class="height-weight">
+                    <span id="pokemon-weight"></span>
+                    <span id="pokemon-height"></span>
+                </div>
+                <div class="pokemon-img">
+                    <img id="poke-img" src="pokemon.png" alt="">
+                </div>
+                <div class="type">
+                    <span id="pokemon-type">Electric</span>
+                </div>
+            </div>
+
+            <table id="stat-table">
+                <tr>
+                    <th>Base</th>
+                    <th>Stats</th>
+                </tr>
+                <tr>
+                    <td>HP :</td>
+                    <td id="pokemon-hp"></td>
+                </tr>
+                <tr>
+                    <td>Attack :</td>
+                    <td id="pokemon-attack"></td>
+                </tr>
+                <tr>
+                    <td>Defence :</td>
+                    <td id="pokemon-defence"></td>
+                </tr>
+                <tr>
+                    <td>Sp. Attack :</td>
+                    <td id="pokemon-sp-attack"></td>
+                </tr>
+                <tr>
+                    <td>Sp. Defence :</td>
+                    <td id="pokemon-sp-defence"></td>
+                </tr>
+                <tr>
+                    <td>Speed :</td>
+                    <td id="pokemon-speed"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
